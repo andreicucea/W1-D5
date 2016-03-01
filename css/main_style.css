@@ -19,14 +19,31 @@ time, mark, audio, video {
  background:transparent;
 }
 
+.cf:before,
+.cf:after,
+.row:before,
+.row:after {
+    content: "";
+    display: table;
+}
+
+.cf:after,
+.row:after {
+  clear: both;
+}
+
 @font-face {
   font-family: Thebold;
   src: url("../fonts/theboldfont.ttf");
 }
 
-@@font-face {
+@font-face {
   font-family: Comfortaa-Regular;
   src: url("../fonts/Comfortaa_Regular.ttf");
+}
+
+.col-4 {
+  width: 33%;
 }
 
 *:focus {
@@ -269,3 +286,30 @@ body {
   margin: 0;
 /*  background-color: grey;
 */}
+
+.col_right_bot {
+  text-align: center;
+  font-family: Comfortaa-Regular;
+  font-weight: 600;
+
+}
+
+.info_tab {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  line-height: 35px;
+}
+
+.info_tab>div:nth-child(1) {
+  background-color: #3C4A5A;
+  color: #fff;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.properties {
+  text-align: left;
+  color: #555;
+  line-height: 22px;
+  font-weight: lighter;
+}
